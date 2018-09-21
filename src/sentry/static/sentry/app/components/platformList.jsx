@@ -70,6 +70,7 @@ const PlatformIcons = styled('div')`
   margin-right: ${space(0.5)};
   display: flex;
   flex-direction: row;
+  flex-shrink: 0;
   justify-content: ${p => (p.direction === 'right' ? 'flex-end' : 'flex-start')};
   ${p =>
     p.consistentWidth && `width: ${p.size + (p.max - 1) * getOverlapWidth(p.size)}px;`};
